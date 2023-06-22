@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    top: auto;
+    width:100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) ,url("one.jpg");
+    background-size: cover;
+    background-position:center ;
+    display: inline-flex;
+}
+
+.header h2{
+    color: rgb(255, 255, 255);
+    
+    padding: 2%;
+
+}
+.nav{
+    flex: 6;
+    text-align: right;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3% 6%;
+    justify-content: space-between;
+    position: relative;
+   
+
+}
+.nav ul li a{
+    color: aliceblue;
+    display: flex;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(232, 83, 108);
+}
+
+.quote{
+    
+    width:90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+
+}
+
+.quote h2{
+    color:rgb(0, 0, 0);
+    background-color: aliceblue;
+    display: inline;
+    padding: 0%;
+    
+}
+
+.quote h1{
+    font-size: 7vh;
+}
+
+.gallery{
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(229, 8, 8, 0));
+    
+    
+}
+
+.gallery h2{
+    
+    text-align: center;
+    
+
+}
+
+.gallery p{
+    text-align: center;
+    
+}
+
+.row{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+}
+.tour-col{
+    flex-basis: 32%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+    border-radius: 10px;
+    position: relative;
+    
+    
+}
+
+.row img{
+    width: 100%;
+
+    display: block;
+  
+    
+}
+
+
+ .layer{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+   
+} 
+
+.layer:hover{
+    background: rgb(240, 146, 146,0.7);
+}
+
+.layer h3{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    width: 80%;
+    right: 8px;
+    
+    bottom: 0;
+    
+}
+.album{
+    padding-top: 3%;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url("pics/album.jpg");
+    background-size: cover;
+   
+    /* overflow: hidden; */
+}
+.album h2{
+    color: aliceblue;
+    text-align: center;
+}
+.container{
+    position: relative;
+    
+    
+}
+
+.album-col{
+   flex-basis: 10%;
+   /* transition: 0.5s; */
+   /* background: red; */
+   
+}
+.album-col:hover {
+    background: pink;
+    opacity: 1;
+
+}
+.row1{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 30%;
+}
+
+
+.album-col img{
+    display: block;
+    outline: 10px solid pink;
+    background: transparent;
+    width: 30vh;
+    transition: 0.5s;
+}
