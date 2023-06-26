@@ -76,7 +76,7 @@ ul li a:hover{
 .gallery{
     width: 100%;
     margin: auto;
-    padding-top: 5%;
+    padding-top: 2%;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(229, 8, 8, 0));
     
@@ -161,16 +161,10 @@ ul li a:hover{
 }
 .container{
     position: relative;
-    
-    
 }
 
 .album-col{
    flex-basis: 10%;
-   
-   /* transition: 0.5s; */
-   /* background: red; */
-   
 }
 .album-col:hover {
     background: pink;
@@ -179,11 +173,7 @@ ul li a:hover{
 
 }
 
-.rows{
-    background-image:url(pics/diego-catto-DI6ywiG5N0g-unsplash.jpg);
-    background-size: contain;
-  
-}
+
 .row1{
     margin: 30px;
     display: flex;
@@ -202,121 +192,77 @@ ul li a:hover{
 }
 
 
-/* .member{
+ 
+
+
+.members{
+ 
+    display: inline-block;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(./pics/max-fuchs-Nm6ojlDO-5c-unsplash.jpg);
+    /* background-size: contain; */
     width: 100%;
-    height: 100%; */
-    /* display: inline-flex; */
-    /* text-align: center;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,2,0.7));
-    position: relative;
-   
+    background-position:center ;
+   padding-left: 85px;
+ 
 }
 
-
-
-.member h2{
-   
-    margin-left: 42%;
-    background-color: rgb(243, 117, 117);
-    align-items: center;
-    width: 20%;
-   
-    
-}
-
-.member .name-b{
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,3));
-}
-
-.box{
-    display: flex;
-    position: relative;
-    width: 100%;
-    padding-top: 2%;
-  
-    
-   
-
-}
-.box-col{
-    display: block;
-  
-
-}
-
-.box-col img{
-    width: 30%;
-    padding-bottom: 3%;
-    height: 10%;
-    padding-left: 20%;
-    padding-right: 30%;
-    height: 100%;
-    justify-content: space-between; */
-    /* border-radius: 100%; */
-/* } */
-/* .name-b{ */
-    /* display: ; */
-    /* margin-right:20px ; */
-    /* background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,3)); */
-    /* justify-content: space-between;
-    overflow: hidden; */
-/* } */
-
-.rows{
-    background-image: url("./pics/diego-catto-DI6ywiG5N0g-unsplash.jpg");
-}
-
-.member h1{
-   
-    margin-left: 42%;
-    background-color: rgb(243, 117, 117);
-    align-items: center;
-    width: 15%;
-    
+.members .kym{
+    margin-right: 50%;
     display: inline-flex;
-    margin-bottom: 1%;
-    margin-top: 1%;
-   
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 3%;
     
 }
+
+
 
 .column {
   float: left;
-  /* width: 0%; */
   margin-bottom: 16px;
-   padding: 0 8px;
-   
-  /* background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1));  */
-  
-  
+   padding-left: 50px;
+   padding-bottom: 10px;
+    
 }
 
 .card{
     margin-left: 20%;
+    display: inline-block;
+    background:linear-gradient(rgba(194, 192, 192, 0), rgba(0,0,0,0));
+    background-size: contain; 
+    background-position:center ;
+    outline: 4px solid black;
+    
     
 }
 
+.card:hover{
+    box-shadow: 5px 5px 10px 10px black;
+}
+ 
+.card .title{
+    color: #c82a2a;
+}
 
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+    /* know your member */
   .column {
     width: 100%;
     display: block;
   }
 }
 
-/* Add some shadows to create a card effect */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
+.members h1{
+    width: 130px;
+   justify-content: center;
+  
 }
-
-/* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
@@ -345,31 +291,24 @@ ul li a:hover{
 
 
 
-@media screen and (max-width:768px){
+@media (max-width:768px){
+    /* goat albums */
 
     .member h1{
         display: inline-block;
         width: 20%;
-    }
-
-   
-    .album-col{
-        justify-content: space-between;
-        margin-right: 25%;
-        margin-bottom: 20%;
-       
-        
-    }
-
-    .container{
         align-items: center;
-        padding-right: 60%; 
-        width: 50%;
-        
-        
-        
     }
+    
 
+   .container{
+    display: inline-block;
+    padding:100%;
+    justify-content: space-between;
+   }
+
+
+    
     .box{
         display: block;
         font-size: 70%;
